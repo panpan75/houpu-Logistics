@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF4AA7C7-2FE2-4664-8D71-B7D61B8C32F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logistics</RootNamespace>
+    <AssemblyName>Logistics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsResourceId />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager.7.5.1.0\lib\AspNetPager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Capacity\CarriersInfo.aspx" />
+    <Content Include="Capacity\CarriersQuery.aspx" />
+    <Content Include="Capacity\TruckInfo.aspx" />
+    <Content Include="Capacity\TruckQuery.aspx" />
+    <Content Include="Capacity\TruckTeamQuery.aspx" />
+    <Content Include="Carriers\AddCarriers.aspx" />
+    <Content Include="Carriers\CarriersManage.aspx" />
+    <Content Include="Carriers\CarriersReceive.aspx" />
+    <Content Include="Command\CommandTask.aspx" />
+    <Content Include="Command\FreeTruck.aspx" />
+    <Content Include="Cost\AlterCost.aspx" />
+    <Content Include="Cost\Costing.aspx" />
+    <Content Include="Cost\CostMaintenance.aspx" />
+    <Content Include="Cost\EditCost.aspx" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="CSS\niceforms-default.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\TruckTeam.css" />
+    <Content Include="Driver\AddDriver.aspx" />
+    <Content Include="Driver\AlterDriver.aspx" />
+    <Content Include="Driver\DriverBindTruck.aspx" />
+    <Content Include="Driver\DriverInfo.aspx" />
+    <Content Include="Driver\DriverManage.aspx" />
+    <Content Include="Frame\Left.aspx" />
+    <Content Include="Frame\Top.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\0.png" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\BG005.gif" />
+    <Content Include="Images\bg01.gif" />
+    <Content Include="Images\bg02.gif" />
+    <Content Include="Images\bg03.gif" />
+    <Content Include="Images\bg04.gif" />
+    <Content Include="Images\button-left.png" />
+    <Content Include="Images\button-right.png" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\checkbox.png" />
+    <Content Include="Images\checkcode.png" />
+    <Content Include="Images\co_01.gif" />
+    <Content Include="Images\co_02.gif" />
+    <Content Include="Images\co_03.gif" />
+    <Content Include="Images\co_04.gif" />
+    <Content Include="Images\cz.gif" />
+    <Content Include="Images\del.gif" />
+    <Content Include="Images\dl.gif" />
+    <Content Include="Images\do_right.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\emessage.gif" />
+    <Content Include="Images\error.gif" />
+    <Content Include="Images\file.png" />
+    <Content Include="Images\input-left.png" />
+    <Content Include="Images\input-right.png" />
+    <Content Include="Images\input.png" />
+    <Content Include="Images\left.gif" />
+    <Content Include="Images\login_bg.gif" />
+    <Content Include="Images\login_bottom.gif" />
+    <Content Include="Images\login_cz.gif" />
+    <Content Include="Images\login_dl.gif" />
+    <Content Include="Images\login_input.jpg" />
+    <Content Include="Images\login_logo.gif" />
+    <Content Include="Images\login_top.gif" />
+    <Content Include="Images\maintenancing.gif" />
+    <Content Include="Images\main_01.gif" />
+    <Content Include="Images\main_03.gif" />
+    <Content Include="Images\main_05.gif" />
+    <Content Include="Images\main_06.gif" />
+    <Content Include="Images\main_07.gif" />
+    <Content Include="Images\main_10.gif" />
+    <Content Include="Images\main_11.gif" />
+    <Content Include="Images\main_13.gif" />
+    <Content Include="Images\main_15.gif" />
+    <Content Include="Images\main_17.gif" />
+    <Content Include="Images\main_19.gif" />
+    <Content Include="Images\main_21.gif" />
+    <Content Include="Images\main_28.gif" />
+    <Content Include="Images\main_29.gif" />
+    <Content Include="Images\main_30.gif" />
+    <Content Include="Images\main_31.gif" />
+    <Content Include="Images\main_32.gif" />
+    <Content Include="Images\main_34.gif" />
+    <Content Include="Images\main_35.gif" />
+    <Content Include="Images\main_43.gif" />
+    <Content Include="Images\main_69.gif" />
+    <Content Include="Images\main_71.gif" />
+    <Content Include="Images\main_72.gif" />
+    <Content Include="Images\main_74.gif" />
+    <Content Include="Images\pass.gif" />
+    <Content Include="Images\quit.gif" />
+    <Content Include="Images\radio.png" />
+    <Content Include="Images\right.gif" />
+    <Content Include="Images\select-left.png" />
+    <Content Include="Images\select-right.png" />
+    <Content Include="Images\sj.gif" />
+    <Content Include="Images\tab_bg.gif" />
+    <Content Include="Images\tb.gif" />
+    <Content Include="Images\textarea-bl.png" />
+    <Content Include="Images\textarea-br.png" />
+    <Content Include="Images\textarea-l-off.png" />
+    <Content Include="Images\textarea-l-over.png" />
+    <Content Include="Images\textarea-r-off.png" />
+    <Content Include="Images\textarea-r-over.png" />
+    <Content Include="Images\textarea-tl.png" />
+    <Content Include="Images\textarea-tr.png" />
+    <Content Include="Images\title.jpg" />
+    <Content Include="Images\user.gif" />
+    <Content Include="Index.aspx" />
+    <None Include="JQ\jquery-1.7.2-vsdoc.js" />
+    <Content Include="JQ\jquery-1.7.2.js" />
+    <Content Include="JQ\jquery-1.7.2.min.js" />
+    <Content Include="SystemManage\AddStaff.aspx" />
+    <Content Include="SystemManage\AlterStaff.aspx" />
+    <Content Include="SystemManage\SearchLog.aspx" />
+    <Content Include="SystemManage\StaffManage.aspx" />
+    <Content Include="TruckTeam\AddTruckTeam.aspx" />
+    <Content Include="TruckTeam\TruckRepeater.aspx" />
+    <Content Include="TruckTeam\TruckTeamManage.aspx" />
+    <Content Include="Truck\AddTruck.aspx" />
+    <Content Include="Truck\AlterTruck.aspx" />
+    <Content Include="Truck\TruckInfo.aspx" />
+    <Content Include="Truck\TruckManage.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="userList.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capacity\CarriersInfo.aspx.cs">
+      <DependentUpon>CarriersInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacity\CarriersInfo.aspx.designer.cs">
+      <DependentUpon>CarriersInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacity\CarriersQuery.aspx.cs">
+      <DependentUpon>CarriersQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacity\CarriersQuery.aspx.designer.cs">
+      <DependentUpon>CarriersQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacity\TruckInfo.aspx.cs">
+      <DependentUpon>TruckInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacity\TruckInfo.aspx.designer.cs">
+      <DependentUpon>TruckInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacity\TruckQuery.aspx.cs">
+      <DependentUpon>TruckQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacity\TruckQuery.aspx.designer.cs">
+      <DependentUpon>TruckQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacity\TruckTeamQuery.aspx.cs">
+      <DependentUpon>TruckTeamQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacity\TruckTeamQuery.aspx.designer.cs">
+      <DependentUpon>TruckTeamQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\AddCarriers.aspx.cs">
+      <DependentUpon>AddCarriers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\AddCarriers.aspx.designer.cs">
+      <DependentUpon>AddCarriers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\CarriersManage.aspx.cs">
+      <DependentUpon>CarriersManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\CarriersManage.aspx.designer.cs">
+      <DependentUpon>CarriersManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\CarriersReceive.aspx.cs">
+      <DependentUpon>CarriersReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\CarriersReceive.aspx.designer.cs">
+      <DependentUpon>CarriersReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\CommandTask.aspx.cs">
+      <DependentUpon>CommandTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\CommandTask.aspx.designer.cs">
+      <DependentUpon>CommandTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FreeTruck.aspx.cs">
+      <DependentUpon>FreeTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Command\FreeTruck.aspx.designer.cs">
+      <DependentUpon>FreeTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cost\AlterCost.aspx.cs">
+      <DependentUpon>AlterCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cost\AlterCost.aspx.designer.cs">
+      <DependentUpon>AlterCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cost\Costing.aspx.cs">
+      <DependentUpon>Costing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cost\Costing.aspx.designer.cs">
+      <DependentUpon>Costing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cost\CostMaintenance.aspx.cs">
+      <DependentUpon>CostMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cost\CostMaintenance.aspx.designer.cs">
+      <DependentUpon>CostMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cost\EditCost.aspx.cs">
+      <DependentUpon>EditCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cost\EditCost.aspx.designer.cs">
+      <DependentUpon>EditCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\AddDriver.aspx.cs">
+      <DependentUpon>AddDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\AddDriver.aspx.designer.cs">
+      <DependentUpon>AddDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\AlterDriver.aspx.cs">
+      <DependentUpon>AlterDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\AlterDriver.aspx.designer.cs">
+      <DependentUpon>AlterDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverBindTruck.aspx.cs">
+      <DependentUpon>DriverBindTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverBindTruck.aspx.designer.cs">
+      <DependentUpon>DriverBindTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverInfo.aspx.cs">
+      <DependentUpon>DriverInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverInfo.aspx.designer.cs">
+      <DependentUpon>DriverInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverManage.aspx.cs">
+      <DependentUpon>DriverManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverManage.aspx.designer.cs">
+      <DependentUpon>DriverManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\AddStaff.aspx.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AddStaff.aspx.designer.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\AlterStaff.aspx.cs">
+      <DependentUpon>AlterStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\AlterStaff.aspx.designer.cs">
+      <DependentUpon>AlterStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\SearchLog.aspx.cs">
+      <DependentUpon>SearchLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\SearchLog.aspx.designer.cs">
+      <DependentUpon>SearchLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\StaffManage.aspx.cs">
+      <DependentUpon>StaffManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\StaffManage.aspx.designer.cs">
+      <DependentUpon>StaffManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckTeam\AddTruckTeam.aspx.cs">
+      <DependentUpon>AddTruckTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckTeam\AddTruckTeam.aspx.designer.cs">
+      <DependentUpon>AddTruckTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckTeam\TruckRepeater.aspx.cs">
+      <DependentUpon>TruckRepeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckTeam\TruckRepeater.aspx.designer.cs">
+      <DependentUpon>TruckRepeater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckTeam\TruckTeamManage.aspx.cs">
+      <DependentUpon>TruckTeamManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckTeam\TruckTeamManage.aspx.designer.cs">
+      <DependentUpon>TruckTeamManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\AddTruck.aspx.cs">
+      <DependentUpon>AddTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Truck\AddTruck.aspx.designer.cs">
+      <DependentUpon>AddTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\AlterTruck.aspx.cs">
+      <DependentUpon>AlterTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Truck\AlterTruck.aspx.designer.cs">
+      <DependentUpon>AlterTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\TruckInfo.aspx.cs">
+      <DependentUpon>TruckInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Truck\TruckInfo.aspx.designer.cs">
+      <DependentUpon>TruckInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\TruckManage.aspx.cs">
+      <DependentUpon>TruckManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Truck\TruckManage.aspx.designer.cs">
+      <DependentUpon>TruckManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userList.aspx.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userList.aspx.designer.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Logistics.BLL\Logistics.BLL.csproj">
+      <Project>{b6bc52fa-88a4-4127-8455-10872bf78da8}</Project>
+      <Name>Logistics.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logistics.Model\Logistics.Model.csproj">
+      <Project>{a8b9093a-66cf-49dc-add4-03d51caf5726}</Project>
+      <Name>Logistics.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53639</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53639/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

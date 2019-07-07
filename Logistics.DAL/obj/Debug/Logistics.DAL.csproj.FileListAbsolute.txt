@@ -1,0 +1,14 @@
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\bin\Debug\Logistics.DAL.dll
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\bin\Debug\Logistics.DAL.pdb
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\bin\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\bin\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.csprojResolveAssemblyReference.cache
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.dll
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\bin\Debug\Logistics.DAL.dll
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\bin\Debug\Logistics.DAL.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\bin\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\bin\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.dll
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.DAL\obj\Debug\Logistics.DAL.csprojResolveAssemblyReference.cache

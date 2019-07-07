@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script src="JQ/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+    setInterval("getTime();",1000); //每隔一秒执行一次
+    })
+    //取得系统当前时间
+    function getTime(){
+
+    var hours = myDate.getHours();
+    var minutes = myDate.getMinutes();
+    var seconds = myDate.getSeconds();
+      
+        
+        //$("#showDate").html(hours+":"+minutes+":"+seconds); //将值赋给div
+   $("#showDate").html(hours + ":" + minutes < 10 ? '0' + minutes : minutes + ":" + seconds < 10 ? '0'+seconds:seconds); //将值赋给div
+    }
+
+  //  $("#showDate").html(hours + ":" + minutes<10?'0'+ minutes:+minutes+ ":" + seconds); //将值赋给div
+    </script>
+</head>
+<body>
+    <div id="showDate"></div>
+  
+</body>
+</html>

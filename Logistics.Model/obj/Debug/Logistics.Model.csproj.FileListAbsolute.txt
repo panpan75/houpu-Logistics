@@ -1,0 +1,10 @@
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.Model\bin\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.Model\bin\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.Model\obj\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.Model\obj\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\Logistics\Logistics\Logistics.Model\obj\Debug\Logistics.Model.csprojResolveAssemblyReference.cache
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.Model\bin\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.Model\bin\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.Model\obj\Debug\Logistics.Model.dll
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.Model\obj\Debug\Logistics.Model.pdb
+C:\Users\周攀\Desktop\asp.net\Logistics\Logistics.Model\obj\Debug\Logistics.Model.csprojResolveAssemblyReference.cache
